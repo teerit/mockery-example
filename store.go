@@ -26,5 +26,6 @@ func (f *FileStore) Read(key string) ([]byte, error) {
 }
 
 func NewFileStore(path string) (Store, error) {
+	// pointer to concrete type
 	return &FileStore{directoryPath: path}, nil
 }
